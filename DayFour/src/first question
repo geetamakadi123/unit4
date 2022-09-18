@@ -1,0 +1,26 @@
+Q1) Differentiate between static and non-static variables?
+
+Ans: Static Variable
+ A static variable is also called a class variable and is common across the objects of the class and this variable can be accessed using the class name as well.
+
+ Non-static Variable
+Any variable of a class which is not static is called non-static variable or an instance variable.
+
+
+Example of static vs non-static variable
+JavaTester.java
+public class JavaTester {
+   public int counter = 0;
+   public static int staticCounter = 0;
+   public JavaTester(){
+      counter++;
+      staticCounter++;
+   }
+   public static void main(String args[]) {
+      JavaTester tester = new JavaTester();
+      JavaTester tester1 = new JavaTester();
+      JavaTester tester2 = new JavaTester();
+      System.out.println("Counter: " + tester2.counter);
+      System.out.println("Static Counter: " + tester2.staticCounter);
+   }
+}

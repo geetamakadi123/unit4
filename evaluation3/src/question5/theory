@@ -1,0 +1,11 @@
+interface A{
+int i = 111;
+}
+class B implements A{
+void methodB(){
+i = 222;
+}
+}
+
+
+//answer:it will give error because Link all references for a local rename (does not change references in other files)

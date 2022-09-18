@@ -1,0 +1,56 @@
+Explain the difference between overloading and overriding methods with an example?
+
+==> example of overloading:
+
+
+     ===>  method overloading : when in particular class if some method have same name but different arguments arguments are different by type of argument,sequence(arrangement),number of argument then this type of arrangement is called as method overloading.
+
+         e.g.
+
+         public void find(){
+         sout("i am in first default method");
+         }
+
+         public void find(int A){
+         sout("i have int type variable");
+         }
+
+         public void find(String str){
+          sout("i have string type variable");
+         }
+
+         public void find(int A,String str){
+               sout("i have int and string type variable");
+         }
+
+          public void find(String str,int A){
+                  sout("i have string and int type variable");
+         }
+
+         ===> so in method overriding all method should be in same class. and it is also known as compile time polymorphism.
+
+
+         method overriding :
+
+         ==> when methods having same name,same argument but they should be in different class then we can achieve method overriding.it is also known as run time polymorphism.
+
+         ==> but main point here is that two class should have IS_A relationship.
+         ==> by method overriding we can achieve inheritance.
+
+         e.g.
+
+       public class Animal{       //parent class
+
+       public void legs(){
+       sout("four legs");
+       }
+       }
+
+       public class dog extends Animal{       //child class
+
+       @Override          //so here method legs of parent class is overridden by child class method legs
+       public void legs(){
+          sout("three legs");
+       }
+       }
+

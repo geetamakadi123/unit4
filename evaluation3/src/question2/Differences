@@ -1,0 +1,46 @@
+Question 2:
+Briefly explain the difference between Early and Late Binding with examples.
+
+Ans: Connecting a method call to the method body is known as Binding.
+ There are two type of Binding:
+ 
+ 1. Early Binding 
+ 2. Late Binding
+ 
+ 1. When the type of an object is determined at compile time it is known as early Binding,
+  whereas when a type of the object is determined at run-time it is known as Late Binding.
+ In java each variable has a type it may be static , private method in a class, there is a static binding,
+ 
+ class Dog{
+ private void eat(){
+ 
+ System.out.println("dog is eating");
+ 
+ }
+ public static void main(String[] args){
+ Dog d1 = new Dog();
+ d1.eat();
+ }
+ 
+ Late binding:
+ 
+ when type of the object is determined at run-time, it's known as late binding.
+ 
+ class Animal{
+ void eat(){
+  System.out.println("animal is eating");
+  }
+ }
+ 
+ class Dog extends Animal{
+ void eat(){
+  System.out.println("dog is eating");
+  }
+  public static void main(Strings args){
+  
+  Animal a1 = new Dog();
+  a1.eat();
+  }
+  
+  }
+ 

@@ -1,0 +1,68 @@
+Q2) What is the difference between ArrayList and Array?
+
+Array:
+An array is a dynamically-created object. It serves as a container that holds the
+constant number of values of the same type. It has a contiguous memory location.
+Array is static in size. An array is a fixed-length data structure.It is mandatory
+to provide the size of an array while initializing it directly or indirectly.It
+performs fast in comparison to ArrayList because of fixed size.Array provides a
+length variable which denotes the length of an array.
+
+Example of Array:
+public class ArrayExample
+{
+public static void main(String args[])
+	{
+	//creating an array of integer type
+	int arr[]=new int[4];
+	//adding elements into array
+	arr[0]=12;
+	arr[1]=2;
+	arr[2]=15;
+	arr[3]=67;
+	for(int i=0;i<arr.length;i++)
+	{
+	System.out.println(arr[i]);
+	}
+  }
+}
+//output
+12
+2
+15
+67
+
+ArrayList:
+The ArrayList is a class of Java Collections framework. It contains popular classes
+like Vector, HashTable, and HashMap.ArrayList is dynamic in size.ArrayList is a
+variable-length data structure. It can be resized itself when needed.We can create
+an instance of ArrayList without specifying its size. Java creates ArrayList of default size.
+ArrayList is internally backed by the array in Java. The resize operation in ArrayList
+slows down the performance.ArrayList provides the size() method to determine the size of ArrayList.
+
+Example of ArrayList
+
+public class ArrayListExample
+{
+public static void main(String args[])
+	{
+	//creating an instance of ArrayList
+	List<Float> list = new ArrayList<Float>();
+	//adding element to arraylist
+	list.add(45.4f);
+	list.add(56.6f);
+	list.add(67.8f);
+	list.add(78.9f);
+	//iteration over ArrayList using for-each loop
+	for(Float f:list)
+	{
+	System.out.println(f);
+	}
+  }
+}
+
+output
+45.4
+56.6
+67.8
+78.9

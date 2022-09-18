@@ -1,0 +1,19 @@
+a) Why String is immutable in java and what is the difference between String and String Builder? And Write
+some of the methods of String class at least 5 with example.
+
+Ans:
+The Strings are immutable in java because of security concurrency, class loading.
+The String is immutable in java and the strings builder is mutable in java.
+The method in string class are the inbuilt method which are used on strings.
+
+Examples:
+concat():concat string to the end of other string.
+
+endWith():check the end with special Character
+
+equals():compare two strings and return true or false
+
+
+format(): Check the format and the argument in specified concation;
+
+indexOf():Return the index of the string

@@ -1,0 +1,20 @@
+Q3) Explain the difference between comparable and
+comparator.
+Ans:
+
+Comparable and Comparator both are interfaces and can be used to sort collection elements.
+
+However, there are many differences between Comparable and Comparator interfaces that are given below.
+  Comparable:
+1) Comparable provides a single sorting sequence. In other words, we can sort the collection on the basis of a single element such as id, name, and price.
+2) Comparable affects the original class, i.e., the actual class is modified.
+3) Comparable provides compareTo() method to sort elements.
+4) Comparable is present in java.lang package.
+5) We can sort the list elements of Comparable type by Collections.sort(List) method.
+
+Comparator:
+ 1)The Comparator provides multiple sorting sequences. In other words, we can sort the collection on the basis of multiple elements such as id, name, and price etc.
+2)Comparator doesn't affect the original class, i.e., the actual class is not modified.
+3)Comparator provides compare() method to sort elements.
+4)A Comparator is present in the java.util package.
+5)We can sort the list elements of Comparator type by Collections.sort(List, Comparator) method.

@@ -1,0 +1,27 @@
+Q4) Explain the Q.difference between overloading and overriding methods with an example?
+
+Ans:
+
+1. Method Overloading
+Method overloading is used to increase the readability of the program.
+Method overloading is performed within class.
+In case of method overloading, parameter must be different.
+Method overloading is the example of compile time polymorphism.
+In java, method overloading can't be performed by changing return type of the method only.
+Return type can be same or different in method overloading.
+But you must have to change the parameter.
+
+Example :
+class OverloadingExample{
+	static int add(int a,int b){
+	  return a+b;
+	  }
+	static int add(int a,int b,int c){
+	  return a+b+c;
+	  }
+}
+
+2. Method Overriding
+Method overriding is used to provide the specific implementation of the method
+that is already provided by its super class.
+Method overriding occurs in two classes that have IS-A (inheritance) relationship.
